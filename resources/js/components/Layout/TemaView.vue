@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import { ref, watch } from 'vue';
+import { ref, watch, markRaw  } from 'vue';
 import { useRoute } from 'vue-router';
 import NotFound from '@/components/Temas/NotFound.vue';
 
@@ -24,7 +24,7 @@ const cargarComponente = async () => {
     const componentPath = `/resources/js/components/Temas/${temaFolder}/${componentName}.vue`;
     
     const modulo = await import(/* @vite-ignore */ componentPath);
-    componenteTema.value = modulo.default;
+    componenteTema.value = markRaw(modulo.default);
   } catch (error) {
     console.error('Error cargando componente:', error);
     componenteTema.value = NotFound;

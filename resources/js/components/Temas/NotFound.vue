@@ -6,7 +6,7 @@
 </template>
 
 <script setup>
-// Lógica del componente si es necesaria
+
 </script>
 
 <style scoped>

@@ -1,0 +1,50 @@
+@import "variables" ;
+
+.title-table {
+  text-align: center;
+  width: 100%;
+  background-color: $color-gris;
+  color: $color-primario;
+}
+.custom-data-table {
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-right: .1rem solid $color-gris !important;
+    border-left: .1rem solid $color-gris !important;
+    border-bottom: .1rem solid $color-gris !important;
+}
+.custom-data-table th{
+    font-size: 1rem;
+    font-weight: 500;
+    border-right: .1rem solid $color-gris !important;
+    background-color: $color-texto !important;
+    color: #ffff !important;
+   
+    :hover {
+        color: $color-secundario !important;
+    }
+}
+
+.custom-data-table tr{
+    font-size: 1rem;
+    font-weight: 500;
+    
+   
+    :hover {
+        color: $color-secundario !important;
+    }
+}
+
+
+.v-data-table-footer__items-per-page > span {
+    padding-inline-end: 24px;
+    font-size: 1rem;
+}
+
+.v-data-table-footer {
+    font-size: 1rem;
+    font-weight: 500;
+    border-top: .1rem solid $color-gris !important;
+    border-bottom: .1rem solid $color-gris !important;
+}
+

@@ -1,14 +1,15 @@
 <template>
   <header class="toolbar" :class="{ 'sidebar-abierto': sidebarAbierto }">
     <button class="boton-menu" @click="$emit('toggle-sidebar')">
-      <span class="icono">☰</span>
+      
+      <v-icon>mdi-menu</v-icon>
     </button>
     
-    <h1 class="titulo">Fundamentos de Programación</h1>
+    <h1 class="titulo">Practicando ando</h1>
     
     <div class="menu-temas">
       <button class="boton-aplicaciones" @click="alternarMenu">
-        <span class="icono">📱</span>
+        <span class="mdi mdi-apps"></span>
       </button>
       <div v-if="menuVisible" class="lista-temas">
         <button 
@@ -16,7 +17,8 @@
           :key="tema.id"
           @click="seleccionarTema(tema)"
         >
-          {{ tema.icono }} {{ tema.nombre }}
+          <v-icon small class="mr-2">{{ tema.icono }}</v-icon>
+          {{ tema.nombre }}
         </button>
       </div>
     </div>

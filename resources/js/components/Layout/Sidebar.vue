@@ -7,7 +7,8 @@
         class="grupo-tema"
       >
         <h3 class="titulo-tema" @click="alternarTema(tema)">
-          {{ tema.icono }} {{ tema.nombre }}
+          <v-icon small class="mr-2">{{ tema.icono }}</v-icon>
+          {{ tema.nombre }}
         </h3>
         <div v-if="temaAbierto === tema.id" class="subtemas">
           <button

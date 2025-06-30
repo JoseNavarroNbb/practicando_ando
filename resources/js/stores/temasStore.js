@@ -9,7 +9,7 @@ export const useTemasStore = defineStore('temas', () => {
       {
         id: 'bucles',
         nombre: 'Bucles',
-        icono: '🔄',
+        icono: 'mdi-autorenew',
         subtemas: [
           { id: 'for', nombre: 'Bucle For' },
           { id: 'while', nombre: 'Bucle While' },
@@ -19,7 +19,7 @@ export const useTemasStore = defineStore('temas', () => {
       {
         id: 'condicionales',
         nombre: 'Condicionales',
-        icono: '❓',
+        icono: 'mdi-help-circle',
         subtemas: [
           { id: 'if', nombre: 'If' },
           { id: 'else', nombre: 'Else' },
